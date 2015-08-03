@@ -4,7 +4,7 @@ Here are two useful plugins for composers of shape-note music:
 
 * `fasola.ly` lets you enter notes in Lilypond using the four syllables used by
 Sacred Harp singers.
-* `doremi.ly` lets you use the seven syllables used in the Christian Harmony,
+* `doremi.ly` lets you use the seven syllables used to sing from the Christian Harmony,
 Harp of Ages, etc.
 
 Seven-syllable note entry *looks* a lot like Lilypond's built-in Spanish note names: you enter notes as `do`, `re`, `mi` and so on. But there is an important difference. In Spanish,
