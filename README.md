@@ -72,6 +72,9 @@ Christian Harmony will be used. To select a different system, use
 `\roundHeads`.
 
 ### MIDI output
+There is one special feature in both `fasola.ly` and `doremi.ly` that is relevant
+only if your score generates MIDI output.
+
 In some singing traditions, the sixth degree of the minor scale is raised in
 some pieces. This raised sixth is rarely written. To generate a printed score
 without accidentals, but raise the sixth degree in the MIDI output, use
