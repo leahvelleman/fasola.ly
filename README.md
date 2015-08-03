@@ -6,7 +6,7 @@ Sacred Harp singers:
 Harp of Ages, etc:
 
 Seven-syllable note entry *looks* a lot like Lilypond's default note
-names. But there is an important difference. In Lilypond's default behavior,
+names: you enter notes as `do`, `re`, `mi` and so on. But there is an important difference. In Lilypond's default behavior,
 "do" is always C. But for shape-note singers, the position of "do" (or "fa")
 depends on the key signature: it is the tonic in a major key, or the third
 degree in a minor key. This plugin uses the syllables the way shape-note singers
