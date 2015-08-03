@@ -31,6 +31,8 @@ put them someplace where Lilypond can see them.
 
 ### Four-shape
 
+There are three things you must do to use four-shape note names in your scores.
+
 * At the beginning of your score, `\include "fasola.ly"`.
 
 * Where you would ordinarily use the `\key` command to set the key signature
@@ -44,3 +46,31 @@ put them someplace where Lilypond can see them.
 Note that there are two *fa*s, two *so*s and two *la*s in an octave.
 `fasola.ly` uses capitalization to distinguish between them. Thus, a major
 scale is `Fa So La fa so la mi Fa`.
+
+By default, Sacred Harp four-shape system will be used.
+To turn shaped notes off, use `\roundHeads`.
+
+### Seven-shape
+There are three things you must do to use seven-shape note names in your scores.
+
+* At the beginning of your score, `\include "doremi.ly"`.
+
+* Where you would ordinarily use the `\key` command to set the key signature
+  for a part, instead use `\set-do`. For a piece in C Major, you would use
+  `\set-do c`. For a piece in G minor, you would use `\set-do bf`.
+
+* Where you would ordinarily use the `\relative` environment, instead use
+  `\doremi`. It has the same syntax as `\relative`, but it takes care of
+  transposition so that `do` falls on the correct note.
+
+By default, the Aikin seven-shape system found in modern editions of the
+Christian Harmony will be used. To select a different system, use
+`\funkHeads` or `\walkerHeads`. (You will never have to use the commands
+`\funkHeadsMinor` or `\walkerHeadsMinor`.) To turn shaped notes off, use
+`\roundHeads`.
+
+### MIDI output
+In some singing traditions, the sixth degree of the minor scale is raised in
+some pieces. This raised sixth is rarely written. To generate a printed score
+without accidentals, but raise the sixth degree in the MIDI output, use
+`\fasola-modal` instead of `\fasola` or `\doremi-modal` instead of `\doremi`.
