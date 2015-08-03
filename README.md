@@ -1,22 +1,9 @@
 # fasola.ly and doremi.ly
 
-`fasola.ly` lets you enter notes in Lilypond using the four syllables used by
+* `fasola.ly` lets you enter notes in Lilypond using the four syllables used by
 Sacred Harp singers: 
-
-```
-\include "fasola.ly"
-\set-fa g
-\fasola g' { Fa So La fa so si la mi Fa }
-```
-
-`doremi.ly` lets you use the seven syllables used in the Christian Harmony,
+* `doremi.ly` lets you use the seven syllables used in the Christian Harmony,
 Harp of Ages, etc:
-
-```
-\include "doremi.ly"
-\set-do g
-\doremi g' { do re mi fa so si la ti do }
-```
 
 Seven-syllable note entry *looks* a lot like Lilypond's default note
 names. But there is an important difference. In Lilypond's default behavior,
@@ -34,60 +21,46 @@ in that directory as well.)
 
 ## Usage
 
-### Four-shape 
-There are a few things you must do to use four-shape note names in your scores.
+### `fasola.ly`
+If you `\include "fasola.ly"` at the beginning of a file, you will have access to four-shape note names.
+You must use `\set-fa` instead of `key`, and `\fasola` instead of `\relative`.
 
-* At the beginning of your score, `\include "fasola.ly"`.
-
-* Where you would ordinarily use the `\key` command to set the key signature
-  for a part, instead use `\set-fa`. For a piece in C Major, you would use
-  `\set-fa c`. For a piece in G minor, you would use `\set-fa bf`.
-
-* Where you would ordinarily use the `\relative` environment, instead use
-  `\fasola`. It has the same syntax as `\relative`, but it takes care of
-  transposition so that `Fa` falls on the correct note.
+```
+\include "fasola.ly"
+\set-fa g
+\fasola g' { Fa So La fa so si la mi Fa }
+```
 
 Note that there are two *fa*s, two *so*s and two *la*s in an octave.
-`fasola.ly` uses capitalization to distinguish between them. Thus, a major
+`fasola.ly` uses capitalization to distinguish between them. A major
 scale is `Fa So La fa so la mi Fa`.
 
-By default, Sacred Harp four-shape system will be used.
-To turn shaped notes off, use `\roundHeads`.
+Notes with accidentals are written using modified syllables:
 
-### Seven-shape
-There are a few things you must do to use seven-shape note names in your scores.
+Pitch | Syllable 
+----|----
+Raised "fa"| `fi`
+Lowered "so"| `se`
+Raised "so"| `si`
+ Lowered "la"| `le` or `lo`
+ Raised "la"| `li`
+Lowered "mi"| `ma` or `me`
 
-* At the beginning of your score, `\include "doremi.ly"`.
+If you are generating MIDI output, and you want the sixth scale degree in minor to be
+raised in the MIDI but not in the printed score, use `\fasola-modal`.
 
-* Where you would ordinarily use the `\key` command to set the key signature
-  for a part, instead use `\set-do`. For a piece in C Major, you would use
-  `\set-do c`. For a piece in G minor, you would use `\set-do bf`.
+### `doremi.ly`
+If you `\include "fasola.ly"` at the beginning of a file, you will have access to seven-shape note names.
+You must use `\set-do` instead of `key`, and `\doremi` instead of `\relative`.
 
-* Where you would ordinarily use the `\relative` environment, instead use
-  `\doremi`. It has the same syntax as `\relative`, but it takes care of
-  transposition so that `do` falls on the correct note.
+```
+\include "doremi.ly"
+\set-do g
+\doremi g' { do re mi fa so si la ti do }
+```
 
-By default, the Aikin seven-shape system found in modern editions of the
-Christian Harmony will be used. To select a different system, use
-`\funkHeads` or `\walkerHeads`. (You will never have to use the commands
-`\funkHeadsMinor` or `\walkerHeadsMinor`.) To turn shaped notes off, use
-`\roundHeads`.
+Notes with accidentals are written using modified syllables:
 
-### MIDI output
-There is one special feature in both `fasola.ly` and `doremi.ly` that is relevant
-only if your score generates MIDI output.
-
-In some singing traditions, the sixth degree of the minor scale is raised in
-some pieces. This raised sixth is rarely written. To generate a printed score
-without accidentals, but raise the sixth degree in the MIDI output, use
-`\fasola-modal` instead of `\fasola` or `\doremi-modal` instead of `\doremi`.
-
-### Accidentals
-Alterations with written accidentals are rare in four-shape traditions, but
-they do occur.  They are more common in seven-shape traditions. There is also
-some disagreement on which syllables to use for some of the altered notes.
-
-The following altered syllables are recognized in seven-shape mode:
 
 Pitch | Syllable 
 ----|----
@@ -102,13 +75,7 @@ Raised "so"| `si`
  Raised "la"| `li`
  Lowered "ti"| `ta` or `te`
 
-And these are recognized in four-shape mode:
+If you are generating MIDI output, and you want the sixth scale degree in minor to be
+raised in the MIDI but not in the printed score, use `\doremi-modal`.
 
-Pitch | Syllable 
-----|----
-Raised "fa"| `fi`
-Lowered "so"| `se`
-Raised "so"| `si`
- Lowered "la"| `le` or `lo`
- Raised "la"| `li`
-Lowered "mi"| `ma` or `me`
+
