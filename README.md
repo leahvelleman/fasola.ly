@@ -82,7 +82,7 @@ some disagreement on which syllables to use for some of the altered notes.
 
 
 Pitch | Syllable 
-----
+----|----
  Raised "do"| `di`
  Lowered "re"| `ra`
  Raised "re"| `ri`
