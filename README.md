@@ -1,14 +1,16 @@
 # fasola.ly and doremi.ly
 
-`fasola.ly` allows you to enter notes in Lilypond using the four syllables used
-by Sacred Harp singers. `doremi.ly` uses the seven syllables used in the
-Christian Harmony, Harp of Ages, etc.
+`fasola.ly` lets you enter notes in Lilypond using the four syllables used by
+Sacred Harp singers: 
 
 ```
 \include "fasola.ly"
 \set-fa g
 \fasola g' { Fa So La fa so si la mi Fa }
 ```
+
+`doremi.ly` lets you use the seven syllables used in the Christian Harmony,
+Harp of Ages, etc:
 
 ```
 \include "doremi.ly"
@@ -17,10 +19,11 @@ Christian Harmony, Harp of Ages, etc.
 ```
 
 Seven-syllable note entry *looks* a lot like Lilypond's default note
-names. But there is an important difference. In Lilypond's normal behavior,
-"do" is always C. But for seven-shape singers, the position of "do" depends
-on the key signature: it is the tonic in a major key, or the third degree
-in a minor key.
+names. But there is an important difference. In Lilypond's default behavior,
+"do" is always C. But for shape-note singers, the position of "do" (or "fa")
+depends on the key signature: it is the tonic in a major key, or the third
+degree in a minor key. This plugin uses the syllables the way shape-note singers
+would use them.
 
 ## Installation
 
@@ -29,9 +32,8 @@ put them someplace where Lilypond can see them.
 
 ## Usage
 
-### Four-shape
-
-There are three things you must do to use four-shape note names in your scores.
+### Four-shape 
+There are a few things you must do to use four-shape note names in your scores.
 
 * At the beginning of your score, `\include "fasola.ly"`.
 
@@ -51,7 +53,7 @@ By default, Sacred Harp four-shape system will be used.
 To turn shaped notes off, use `\roundHeads`.
 
 ### Seven-shape
-There are three things you must do to use seven-shape note names in your scores.
+There are a few things you must do to use seven-shape note names in your scores.
 
 * At the beginning of your score, `\include "doremi.ly"`.
 
