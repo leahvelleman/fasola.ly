@@ -51,7 +51,7 @@ If you are generating MIDI output, and you want the sixth scale degree in minor 
 raised in the MIDI but not in the printed score, use `\fasola-modal`.
 
 ### `doremi.ly`
-If you `\include "fasola.ly"` at the beginning of a file, you will have access to seven-shape note names.
+If you `\include "doremi.ly"` at the beginning of a file, you will have access to seven-shape note names.
 You must use `\set-do` instead of `key`, and `\doremi` instead of `\relative`.
 
 ```
