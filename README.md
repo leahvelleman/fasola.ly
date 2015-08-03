@@ -74,3 +74,22 @@ In some singing traditions, the sixth degree of the minor scale is raised in
 some pieces. This raised sixth is rarely written. To generate a printed score
 without accidentals, but raise the sixth degree in the MIDI output, use
 `\fasola-modal` instead of `\fasola` or `\doremi-modal` instead of `\doremi`.
+
+### Accidentals
+Alterations with written accidentals are rare in four-shape traditions, but
+they do occur.  They are more common in seven-shape traditions. There is also
+some disagreement on which syllables to use for some of the altered notes.
+
+
+Pitch | Syllable 
+----
+ Raised "do"| `di`
+ Lowered "re"| `ra`
+ Raised "re"| `ri`
+ Lowered "mi"| `ma` or `me`
+ Raised "fa"| `fi`
+ Lowered "so"| `se`
+ Raised "so"| `si`
+ Lowered "la"| `le` or `lo`
+ Raised "la"| `li`
+ Lowered "ti": `ta` or `te`
