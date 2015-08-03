@@ -80,18 +80,28 @@ Alterations with written accidentals are rare in four-shape traditions, but
 they do occur.  They are more common in seven-shape traditions. There is also
 some disagreement on which syllables to use for some of the altered notes.
 
-The following altered syllables are recognized. (In four-shape mode, only the
-rows in bold print are relevant.)
+The following altered syllables are recognized in seven-shape mode:
 
 Pitch | Syllable 
 ----|----
  Raised "do"| `di`
  Lowered "re"| `ra`
  Raised "re"| `ri`
-**Lowered "mi"**| `ma` or `me`
-**Raised "fa"**| `fi`
-**Lowered "so"**| `se`
-**Raised "so"**| `si`
+Lowered "mi"| `ma` or `me`
+Raised "fa"| `fi`
+Lowered "so"| `se`
+Raised "so"| `si`
  Lowered "la"| `le` or `lo`
  Raised "la"| `li`
  Lowered "ti"| `ta` or `te`
+
+And these are recognized in four-shape mode:
+
+Pitch | Syllable 
+----|----
+Raised "fa"| `fi`
+Lowered "so"| `se`
+Raised "so"| `si`
+ Lowered "la"| `le` or `lo`
+ Raised "la"| `li`
+Lowered "mi"| `ma` or `me`
