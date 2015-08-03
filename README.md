@@ -29,7 +29,8 @@ would use them.
 
 Download the files `doremi.ly`, `fasola.ly` and `shapenote-common.ly`, and 
 put them someplace where Lilypond can see them. (If you keep all the `.ly` files
-you are working on in one directory, the easiest thing to do is to put these files in that directory.)
+you are working on in one directory, the easiest thing to do is to put these files 
+in that directory as well.)
 
 ## Usage
 
